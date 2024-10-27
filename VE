@@ -1,9 +1,7 @@
-#!/data/data/com.termux/files/usr/bin/python
-import platform,os
-#####
-os.system("git pull")
-bit = platform.architecture()[0]
-if bit == '64bit':
-    import VE
-elif bit == '32bit':
-    import VE
+import os, sys
+try:os.system('git pull')
+except:pass
+try:
+    __import__("VE")._____VENOM_()
+except Exception as e:
+    exit(str(e))
